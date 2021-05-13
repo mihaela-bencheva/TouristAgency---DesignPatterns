@@ -1,0 +1,8 @@
+C:\Users\VikS\source\repos\TouristAgency\State\bin\Debug\netcoreapp3.0\State.deps.json
+C:\Users\VikS\source\repos\TouristAgency\State\bin\Debug\netcoreapp3.0\State.dll
+C:\Users\VikS\source\repos\TouristAgency\State\bin\Debug\netcoreapp3.0\State.pdb
+C:\Users\VikS\source\repos\TouristAgency\State\obj\Debug\netcoreapp3.0\State.csprojAssemblyReference.cache
+C:\Users\VikS\source\repos\TouristAgency\State\obj\Debug\netcoreapp3.0\State.AssemblyInfoInputs.cache
+C:\Users\VikS\source\repos\TouristAgency\State\obj\Debug\netcoreapp3.0\State.AssemblyInfo.cs
+C:\Users\VikS\source\repos\TouristAgency\State\obj\Debug\netcoreapp3.0\State.dll
+C:\Users\VikS\source\repos\TouristAgency\State\obj\Debug\netcoreapp3.0\State.pdb

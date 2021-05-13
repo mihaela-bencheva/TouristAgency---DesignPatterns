@@ -1,0 +1,128 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "AbstractFactory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "State": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AbstractFactory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AbstractFactory.dll": {}
+        }
+      },
+      "FlyWeight/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "AbstractFactory": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FlyWeight.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlyWeight.dll": {}
+        }
+      },
+      "State/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/State.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/State.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AbstractFactory/1.0.0": {
+      "type": "project",
+      "path": "../AbstractFactory/AbstractFactory.csproj",
+      "msbuildProject": "../AbstractFactory/AbstractFactory.csproj"
+    },
+    "FlyWeight/1.0.0": {
+      "type": "project",
+      "path": "../FlyWeight/FlyWeight.csproj",
+      "msbuildProject": "../FlyWeight/FlyWeight.csproj"
+    },
+    "State/1.0.0": {
+      "type": "project",
+      "path": "../State/State.csproj",
+      "msbuildProject": "../State/State.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "AbstractFactory >= 1.0.0",
+      "FlyWeight >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\VikS\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\TouristAgency\\TouristAgency.csproj",
+      "projectName": "TouristAgency",
+      "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\TouristAgency\\TouristAgency.csproj",
+      "packagesPath": "C:\\Users\\VikS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\TouristAgency\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\VikS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj": {
+              "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj"
+            },
+            "C:\\Users\\VikS\\source\\repos\\TouristAgency\\FlyWeight\\FlyWeight.csproj": {
+              "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\FlyWeight\\FlyWeight.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Mediator/1.0.0": {
+        "dependencies": {
+          "AbstractFactory": "1.0.0"
+        },
+        "runtime": {
+          "Mediator.dll": {}
+        }
+      },
+      "AbstractFactory/1.0.0": {
+        "dependencies": {
+          "State": "1.0.0"
+        },
+        "runtime": {
+          "AbstractFactory.dll": {}
+        }
+      },
+      "State/1.0.0": {
+        "runtime": {
+          "State.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mediator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AbstractFactory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "State/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

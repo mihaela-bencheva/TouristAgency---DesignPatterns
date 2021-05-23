@@ -15,6 +15,19 @@
           "bin/placeholder/AbstractFactory.dll": {}
         }
       },
+      "Mediator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "AbstractFactory": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mediator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mediator.dll": {}
+        }
+      },
       "State/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -33,6 +46,11 @@
       "path": "../AbstractFactory/AbstractFactory.csproj",
       "msbuildProject": "../AbstractFactory/AbstractFactory.csproj"
     },
+    "Mediator/1.0.0": {
+      "type": "project",
+      "path": "../Mediator/Mediator.csproj",
+      "msbuildProject": "../Mediator/Mediator.csproj"
+    },
     "State/1.0.0": {
       "type": "project",
       "path": "../State/State.csproj",
@@ -41,7 +59,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "AbstractFactory >= 1.0.0"
+      "AbstractFactory >= 1.0.0",
+      "Mediator >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -72,6 +91,9 @@
           "projectReferences": {
             "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj": {
               "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj"
+            },
+            "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\Mediator.csproj": {
+              "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\Mediator.csproj"
             }
           }
         }

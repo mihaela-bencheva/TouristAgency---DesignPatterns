@@ -1,6 +1,8 @@
 ﻿using AbstractFactory.Abstractions;
 using FlyWeight.Additional_Info;
 using FlyWeight.Interfaces;
+using Mediator;
+using Mediator.Participants;
 using System;
 using System.Collections.Generic;
 
@@ -10,8 +12,8 @@ namespace FlyWeight
     {
         private readonly Dictionary<string, IInformation> additionalInfos = new Dictionary<string, IInformation>();
         private readonly List<Excursion> _excursions;
-        private readonly List<string> tourists = new List<string>();
-        string touristName;
+        private readonly List<string> touristsInfo = new List<string>();
+        string touristInfo;
 
         public AdditionalInformation(List<Excursion> excursions)
         {
@@ -24,24 +26,24 @@ namespace FlyWeight
             if (additionalInfos.ContainsKey(infoType))
             {
                 information = additionalInfos[infoType];
-                touristName = information.GetInformation();
-                tourists.Add(touristName);
+                touristInfo = information.GetInformation();
+                touristsInfo.Add(touristInfo);
             }
             else
             {
                 if (infoType == "Children")
                 {
                     information = new Children();
-                    touristName = information.GetInformation();
-                    tourists.Add(touristName);
+                    touristInfo = information.GetInformation();
+                    touristsInfo.Add(touristInfo);
                     additionalInfos.Add(infoType, information);
                 }
                 else
                     if (infoType == "TouristInfo")
                 {
                     information = new TouristInfo();
-                    touristName = information.GetInformation();
-                    tourists.Add(touristName);
+                    touristInfo = information.GetInformation();
+                    touristsInfo.Add(touristInfo);
                     additionalInfos.Add(infoType, information);
                 }
             }
@@ -81,7 +83,15 @@ namespace FlyWeight
             }
 
             Console.WriteLine();
-            Console.WriteLine("Total Price: {0}", Math.Round(totalExcursionSum, 2));
+
+            for (int i = 0; i < touristsInfo.Count; i++)
+            {
+                Console.WriteLine("Tourist Information: {0}", touristsInfo[i]);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Total Price: {0}", Math.Round(totalExcursionSum, 2) + "$");
+            Console.WriteLine();
         }
     }
 }

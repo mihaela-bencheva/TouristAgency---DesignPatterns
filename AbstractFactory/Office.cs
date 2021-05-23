@@ -8,9 +8,9 @@ namespace AbstractFactory
 {
     public class Office
     {
-        private List<Excursion> _excursion;
-        private ContinentFactory _continent;
-        private ExcursionState state;
+        private readonly List<Excursion> _excursion;
+        private readonly ContinentFactory _continent;
+        private readonly ExcursionState state;
 
         public Office(ContinentFactory continentFactory)
         {

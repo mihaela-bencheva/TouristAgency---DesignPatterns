@@ -1,0 +1,13 @@
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\Mediator.deps.json
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\Mediator.dll
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\Mediator.pdb
+C:\Users\VikS\source\repos\TouristAgency\Mediator\obj\Debug\netcoreapp3.0\Mediator.csprojAssemblyReference.cache
+C:\Users\VikS\source\repos\TouristAgency\Mediator\obj\Debug\netcoreapp3.0\Mediator.AssemblyInfoInputs.cache
+C:\Users\VikS\source\repos\TouristAgency\Mediator\obj\Debug\netcoreapp3.0\Mediator.AssemblyInfo.cs
+C:\Users\VikS\source\repos\TouristAgency\Mediator\obj\Debug\netcoreapp3.0\Mediator.dll
+C:\Users\VikS\source\repos\TouristAgency\Mediator\obj\Debug\netcoreapp3.0\Mediator.pdb
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\AbstractFactory.dll
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\State.dll
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\AbstractFactory.pdb
+C:\Users\VikS\source\repos\TouristAgency\Mediator\bin\Debug\netcoreapp3.0\State.pdb
+C:\Users\VikS\source\repos\TouristAgency\Mediator\obj\Debug\netcoreapp3.0\Mediator.csproj.CopyComplete

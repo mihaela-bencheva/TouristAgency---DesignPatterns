@@ -9,7 +9,8 @@
       "TouristAgency/1.0.0": {
         "dependencies": {
           "AbstractFactory": "1.0.0",
-          "FlyWeight": "1.0.0"
+          "FlyWeight": "1.0.0",
+          "Mediator": "1.0.0"
         },
         "runtime": {
           "TouristAgency.dll": {}
@@ -25,10 +26,19 @@
       },
       "FlyWeight/1.0.0": {
         "dependencies": {
-          "AbstractFactory": "1.0.0"
+          "AbstractFactory": "1.0.0",
+          "Mediator": "1.0.0"
         },
         "runtime": {
           "FlyWeight.dll": {}
+        }
+      },
+      "Mediator/1.0.0": {
+        "dependencies": {
+          "AbstractFactory": "1.0.0"
+        },
+        "runtime": {
+          "Mediator.dll": {}
         }
       },
       "State/1.0.0": {
@@ -50,6 +60,11 @@
       "sha512": ""
     },
     "FlyWeight/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mediator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

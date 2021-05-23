@@ -1,0 +1,172 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\Mediator.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj",
+        "projectName": "AbstractFactory",
+        "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj",
+        "packagesPath": "C:\\Users\\VikS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VikS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\VikS\\source\\repos\\TouristAgency\\State\\State.csproj": {
+                "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\State\\State.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\Mediator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\Mediator.csproj",
+        "projectName": "Mediator",
+        "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\Mediator.csproj",
+        "packagesPath": "C:\\Users\\VikS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\Mediator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VikS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj": {
+                "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\AbstractFactory\\AbstractFactory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\VikS\\source\\repos\\TouristAgency\\State\\State.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\State\\State.csproj",
+        "projectName": "State",
+        "projectPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\State\\State.csproj",
+        "packagesPath": "C:\\Users\\VikS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VikS\\source\\repos\\TouristAgency\\State\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VikS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

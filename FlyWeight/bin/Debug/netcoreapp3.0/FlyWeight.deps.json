@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.0": {
       "FlyWeight/1.0.0": {
         "dependencies": {
-          "AbstractFactory": "1.0.0"
+          "AbstractFactory": "1.0.0",
+          "Mediator": "1.0.0"
         },
         "runtime": {
           "FlyWeight.dll": {}
@@ -20,6 +21,14 @@
         },
         "runtime": {
           "AbstractFactory.dll": {}
+        }
+      },
+      "Mediator/1.0.0": {
+        "dependencies": {
+          "AbstractFactory": "1.0.0"
+        },
+        "runtime": {
+          "Mediator.dll": {}
         }
       },
       "State/1.0.0": {
@@ -36,6 +45,11 @@
       "sha512": ""
     },
     "AbstractFactory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mediator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

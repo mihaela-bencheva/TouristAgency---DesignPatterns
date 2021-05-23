@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "State\State.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyWeight", "FlyWeight\FlyWeight.csproj", "{01AB350F-CE26-4F13-915D-4512A812104D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{C7B5FB4A-1823-469C-8E08-E66E8D5342B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{01AB350F-CE26-4F13-915D-4512A812104D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01AB350F-CE26-4F13-915D-4512A812104D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01AB350F-CE26-4F13-915D-4512A812104D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B5FB4A-1823-469C-8E08-E66E8D5342B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B5FB4A-1823-469C-8E08-E66E8D5342B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B5FB4A-1823-469C-8E08-E66E8D5342B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B5FB4A-1823-469C-8E08-E66E8D5342B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

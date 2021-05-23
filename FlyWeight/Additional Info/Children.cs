@@ -11,6 +11,7 @@ namespace FlyWeight.Additional_Info
         {
             Console.Write("Enter a child's name: ");
             string children = Console.ReadLine();
+            Console.WriteLine();
             return children;
         }
     }

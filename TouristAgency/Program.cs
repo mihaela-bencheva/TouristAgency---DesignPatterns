@@ -2,13 +2,14 @@
 using AbstractFactory.Abstractions;
 using AbstractFactory.Excursions;
 using FlyWeight;
+using Mediator;
 using System;
 using System.Collections.Generic;
 using TouristAgency.Services;
 
 namespace TouristAgency
 {
-    class Program
+    public class Program
     {
         public static void Main()
         {
@@ -25,19 +26,6 @@ namespace TouristAgency
 
             ExcursionReservation reservation = new ExcursionReservation(excursions);
             reservation.ChooseDestinationById(excursionID);
-
-            //ServerMediator server = new ServerMediator();
-
-            //Staff staff = new Staff(server);
-            //Client client = new Client(server);
-
-            //server.Staff = staff;
-            //server.Client = client;
-
-            //staff.Send("Are you sure you want to reserve this excursion?");
-
-            //string message = Console.ReadLine();
-            //client.Send(message);
         }
     }
 }

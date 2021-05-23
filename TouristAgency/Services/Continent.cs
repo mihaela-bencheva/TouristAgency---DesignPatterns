@@ -11,12 +11,12 @@ namespace TouristAgency.Services
     public class Continent
     {
         List<Excursion> excursions;
-        ContinentFactory europe = new Europe();
-        ContinentFactory africa = new Africa();
-        ContinentFactory asia = new Asia();
-        ContinentFactory northAmerica = new NorthAmerica();
-        ContinentFactory southAmerica = new SouthAmerica();
-        ContinentFactory australia = new Australia();
+        private readonly ContinentFactory europe = new Europe();
+        private readonly ContinentFactory africa = new Africa();
+        private readonly ContinentFactory asia = new Asia();
+        private readonly ContinentFactory northAmerica = new NorthAmerica();
+        private readonly ContinentFactory southAmerica = new SouthAmerica();
+        private readonly ContinentFactory australia = new Australia();
 
         public List<Excursion> ChooseContinent(string continentName)
         {

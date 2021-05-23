@@ -11,3 +11,5 @@ C:\Users\VikS\source\repos\TouristAgency\FlyWeight\obj\Debug\netcoreapp3.0\FlyWe
 C:\Users\VikS\source\repos\TouristAgency\FlyWeight\obj\Debug\netcoreapp3.0\FlyWeight.csproj.CopyComplete
 C:\Users\VikS\source\repos\TouristAgency\FlyWeight\obj\Debug\netcoreapp3.0\FlyWeight.dll
 C:\Users\VikS\source\repos\TouristAgency\FlyWeight\obj\Debug\netcoreapp3.0\FlyWeight.pdb
+C:\Users\VikS\source\repos\TouristAgency\FlyWeight\bin\Debug\netcoreapp3.0\Mediator.dll
+C:\Users\VikS\source\repos\TouristAgency\FlyWeight\bin\Debug\netcoreapp3.0\Mediator.pdb

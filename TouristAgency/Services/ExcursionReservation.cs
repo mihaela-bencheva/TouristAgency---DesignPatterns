@@ -1,5 +1,7 @@
 ﻿using AbstractFactory.Abstractions;
 using FlyWeight;
+using Mediator;
+using Mediator.Participants;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,9 +12,15 @@ namespace TouristAgency.Services
     {
         private readonly List<Excursion> _excursions;
         private AdditionalInformation information;
+        private readonly ServerMediator mediator;
+        private readonly Staff staff;
+        private readonly Client client;
         public ExcursionReservation(List<Excursion> excursions)
         {
             _excursions = excursions;
+            mediator = new ServerMediator();
+            staff = new Staff(mediator);
+            client = new Client(mediator);
         }
 
         public void ChooseDestinationById(int excursionID) 
@@ -70,6 +78,37 @@ namespace TouristAgency.Services
                 Console.Clear();
 
                 information.GetExcursionTotalPrice(excursionID);
+
+                mediator.Staff = staff;
+                mediator.Client = client;
+
+                staff.Send("Are you sure you want to reserve this trip? Yes/ No: ");
+                var message = Console.ReadLine();
+                if (message == "Yes")
+                {
+                    client.Send(message);
+                }
+                else if (message == "No")
+                {
+                    Console.Clear();
+                    Console.Write("Enter a continent name: ");
+                    string continentName = Console.ReadLine();
+
+                    Continent continent = new Continent();
+
+                    List<Excursion> excursions = continent.ChooseContinent(continentName);
+
+
+                    Console.WriteLine("Choose an excursion: ");
+                    int newexcursionID = int.Parse(Console.ReadLine());
+
+                    ExcursionReservation reservation = new ExcursionReservation(excursions);
+                    reservation.ChooseDestinationById(newexcursionID);
+                }
+                else
+                {
+                    Console.WriteLine("Something went wrong...");
+                }
             }
             else
             {

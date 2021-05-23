@@ -16,8 +16,8 @@ namespace AbstractFactory.Excursions
                 {
                     ID = 1,
                     Destination = "Milan",
-                    DepartureDate = new DateTime(2021, 6, 21),
-                    ReturnDate = new DateTime(2021, 6, 26),
+                    DepartureDate = new DateTime(2021, 7, 21),
+                    ReturnDate = new DateTime(2021, 7, 26),
                     Price = 566.66,
                     TouristGuide = "Atanaska Pencheva",
                     Transport = "Bus"

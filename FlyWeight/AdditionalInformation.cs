@@ -5,6 +5,7 @@ using Mediator;
 using Mediator.Participants;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace FlyWeight
 {
@@ -50,33 +51,22 @@ namespace FlyWeight
             return information;
         }
 
-        public void GetExcursionTotalPrice(int ID)
+        public void GetExcursionTotalPrice(int ID, int childrenCount, int touristsCount)
         {
-            int childrenCount = 0;
-            int touristCount = 0;
             double totalExcursionSum = 0;
-
-            if (additionalInfos.ContainsKey("Children"))
-            {
-                childrenCount = additionalInfos.Count;
-            }
-            if (additionalInfos.ContainsKey("TouristInfo"))
-            {
-                touristCount = additionalInfos.Count;
-            }
 
             for (int i = 0; i < _excursions.Count; i++)
             {
                 if (_excursions[i].ID == ID)
                 {
                     totalExcursionSum = (_excursions[i].Price - (_excursions[i].Price * 0.6)) * childrenCount
-                        + (touristCount * _excursions[i].Price);
+                        + (touristsCount * _excursions[i].Price);
 
 
                     Console.WriteLine("Where: {0}", _excursions[i].Destination);
                     Console.WriteLine("When: {0}", _excursions[i].DepartureDate);
                     Console.WriteLine("To When: {0}", _excursions[i].ReturnDate);
-                    Console.WriteLine("Price: {0}", _excursions[i].Price);
+                    Console.WriteLine("Price: {0}", _excursions[i].Price + "$");
                     Console.WriteLine("Tourist Guide: {0}", _excursions[i].TouristGuide);
                     Console.WriteLine("Transport: {0}", _excursions[i].Transport);
                 }

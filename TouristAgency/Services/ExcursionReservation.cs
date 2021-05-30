@@ -57,10 +57,12 @@ namespace TouristAgency.Services
         public void GetAdditionalInfo(int excursionID)
         {
             information = new AdditionalInformation(_excursions);
+            int childrenCount;
+            int touristsCount;
             if (information != null)
             {
                 Console.Write("Children under 18 years old: ");
-                int childrenCount = int.Parse(Console.ReadLine());
+                childrenCount = int.Parse(Console.ReadLine());
                 for (int i = 0; i < childrenCount; i++)
                 {
                     information.GetAdditionalInfo("Children");
@@ -69,7 +71,7 @@ namespace TouristAgency.Services
                 Console.Clear();
 
                 Console.Write("Tourists: ");
-                int touristsCount = int.Parse(Console.ReadLine());
+                touristsCount = int.Parse(Console.ReadLine());
                 for (int i = 0; i < touristsCount; i++)
                 {
                     information.GetAdditionalInfo("TouristInfo");
@@ -77,7 +79,7 @@ namespace TouristAgency.Services
 
                 Console.Clear();
 
-                information.GetExcursionTotalPrice(excursionID);
+                information.GetExcursionTotalPrice(excursionID, childrenCount, touristsCount);
 
                 mediator.Staff = staff;
                 mediator.Client = client;

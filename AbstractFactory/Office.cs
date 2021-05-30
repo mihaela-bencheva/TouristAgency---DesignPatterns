@@ -43,7 +43,7 @@ namespace AbstractFactory
                         Console.WriteLine("To When: {0}", _excursion[i].ReturnDate);
                     }
                 }
-                Console.WriteLine("Price: {0}", _excursion[i].Price);
+                Console.WriteLine("Price: {0}", _excursion[i].Price + "$");
                 Console.WriteLine("Tourist Guide: {0}", _excursion[i].TouristGuide);
                 Console.WriteLine("Transport: {0}", _excursion[i].Transport);
                 Console.WriteLine();

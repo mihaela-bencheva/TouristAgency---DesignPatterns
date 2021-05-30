@@ -17,7 +17,7 @@ namespace FlyWeight.Additional_Info
             string phoneNumber = Console.ReadLine();
             bool flag = false;
 
-            Regex regexPhone = new Regex(@"0[8-9][7-9][0-9]{7}");
+            Regex regexPhone = new Regex(@"^0[8-9][7-9][0-9]{7}$");
             Match matchPhone = regexPhone.Match(phoneNumber);
 
             while (flag == false)

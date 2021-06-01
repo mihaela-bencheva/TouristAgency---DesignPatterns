@@ -63,49 +63,82 @@ namespace TouristAgency.Services
             {
                 Console.Write("Children under 18 years old: ");
                 childrenCount = int.Parse(Console.ReadLine());
-                for (int i = 0; i < childrenCount; i++)
-                {
-                    information.GetAdditionalInfo("Children");
-                }
 
+                while (!childrenCount.Equals(null))
+                {
+                    if (childrenCount >= 0)
+                    {
+                        for (int i = 0; i < childrenCount; i++)
+                        {
+                            information.GetAdditionalInfo("Children");
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Try again...");
+                        childrenCount = int.Parse(Console.ReadLine());
+                    }
+                }
+       
                 Console.Clear();
 
                 Console.Write("Tourists: ");
                 touristsCount = int.Parse(Console.ReadLine());
-                for (int i = 0; i < touristsCount; i++)
+
+                while (touristsCount > 0 || touristsCount < 0)
                 {
-                    information.GetAdditionalInfo("TouristInfo");
+                    if (touristsCount > 0)
+                    {
+                        for (int i = 0; i < touristsCount; i++)
+                        {
+                            information.GetAdditionalInfo("TouristInfo");
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("There must be at least 1 tourist!");
+                        touristsCount = int.Parse(Console.ReadLine());
+                    }
                 }
 
                 Console.Clear();
 
-                information.GetExcursionTotalPrice(excursionID, childrenCount, touristsCount);
-
-                mediator.Staff = staff;
-                mediator.Client = client;
-
-                staff.Send("Are you sure you want to reserve this trip? Yes/ No: ");
-                var message = Console.ReadLine();
-                if (message == "Yes")
+                if (childrenCount >= 0 && touristsCount > 0)
                 {
-                    client.Send(message);
-                }
-                else if (message == "No")
-                {
-                    Console.Clear();
-                    Console.Write("Enter a continent name: ");
-                    string continentName = Console.ReadLine();
+                    information.GetExcursionTotalPrice(excursionID, childrenCount, touristsCount);
 
-                    Continent continent = new Continent();
+                    mediator.Staff = staff;
+                    mediator.Client = client;
 
-                    List<Excursion> excursions = continent.ChooseContinent(continentName);
+                    staff.Send("Are you sure you want to reserve this trip? Yes/ No: ");
+                    var message = Console.ReadLine();
+                    if (message == "Yes")
+                    {
+                        client.Send(message);
+                    }
+                    else if (message == "No")
+                    {
+                        Console.Clear();
+                        Console.Write("Enter a continent name: ");
+                        string continentName = Console.ReadLine();
+
+                        Continent continent = new Continent();
+
+                        List<Excursion> excursions = continent.ChooseContinent(continentName);
 
 
-                    Console.WriteLine("Choose an excursion: ");
-                    int newexcursionID = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Choose an excursion: ");
+                        int newexcursionID = int.Parse(Console.ReadLine());
 
-                    ExcursionReservation reservation = new ExcursionReservation(excursions);
-                    reservation.ChooseDestinationById(newexcursionID);
+                        ExcursionReservation reservation = new ExcursionReservation(excursions);
+                        reservation.ChooseDestinationById(newexcursionID);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Something went wrong...");
+                    }
                 }
                 else
                 {

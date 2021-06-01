@@ -64,7 +64,7 @@ namespace TouristAgency.Services
                 Console.Write("Children under 18 years old: ");
                 childrenCount = int.Parse(Console.ReadLine());
 
-                while (!childrenCount.Equals(null))
+                while (childrenCount >= 0 || childrenCount < 0)
                 {
                     if (childrenCount >= 0)
                     {
@@ -86,7 +86,7 @@ namespace TouristAgency.Services
                 Console.Write("Tourists: ");
                 touristsCount = int.Parse(Console.ReadLine());
 
-                while (touristsCount > 0 || touristsCount < 0)
+                while (touristsCount > 0 || touristsCount <= 0)
                 {
                     if (touristsCount > 0)
                     {
